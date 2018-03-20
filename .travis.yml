@@ -11,6 +11,7 @@ script:
 after_script:
   - cd ./public
   - git init
+  - echo "blog.em248.com" > CNAME
   - git config user.name "geekyzk"
   - git config user.email "geekyzk@163.com"
   - git add *
