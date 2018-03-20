@@ -1,0 +1,25 @@
+language: node_js
+node_js: stable
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "geekyzk"
+  - git config user.email "geekyzk@163.com"
+  - git add *
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/geekyzk/geekyzk.github.io.git --{仓库地址}
