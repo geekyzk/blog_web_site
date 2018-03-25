@@ -49,7 +49,7 @@ widgets:
 - recent_posts
 - archive
 - tag
-- adsense
+# - adsense
 # - friendly_link
 # - wechat
 
