@@ -11,6 +11,7 @@ date: 2018/04/02 23:46:25
 - CloudFoundry部署执行代码(cf-deployment)
 - CloudFoundry命令行工具(cf-cli)
 
+<!--more-->
 ## 2、部署流程
 
 &emsp;&emsp;下面开始从0开始介绍如何一步步的使用cf-deployment部署CloudFoundry。
