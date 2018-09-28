@@ -125,7 +125,7 @@ $ bosh -e bosh env
 
 &emsp;&emsp;从`Bosh V2`版本开始，Bosh就支持通过配置cloud-config信息的方式来配置通过其部署的软件的部署信息，把部署的配置能做到统一管理，简化软件的部署配置。下面列举出部分cloud-config能配置的信息，更多信息可到[官方cloud-config说明](https://bosh.io/docs/cloud-config.html)中查看。下面是本次部署的cloud-config配置文件配置:
 
-```shell
+```yml
 ---
 azs:
 - name: z1
